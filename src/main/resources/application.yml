@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: rasmio-api
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/rasmio_proxy}
+
+rasmio:
+  base-url: ${RASMIO_BASE_URL:https://api.rasm.io/API}
+  api-key: ${RASMIO_API_KEY:}
+  connect-timeout: ${RASMIO_CONNECT_TIMEOUT:5s}
+  read-timeout: ${RASMIO_READ_TIMEOUT:30s}
